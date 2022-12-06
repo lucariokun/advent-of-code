@@ -1,3 +1,4 @@
+import copy
 stack = list()
 duplicate_stack = list()
 
@@ -14,7 +15,7 @@ with open('d5/day5-input.txt', 'r') as f:
             for l in stack:
                 l.reverse()
             if not duplicate_stack:
-                duplicate_stack = stack.copy()
+                duplicate_stack = copy.deepcopy(stack)
         elif line.strip() and line.strip()[0] == 'm':
             line = line.split(' ')
             number_to_move = int(line[1])
