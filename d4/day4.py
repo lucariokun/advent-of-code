@@ -1,7 +1,7 @@
 entirely_contained = int()
 overlapping = int()
 
-with open('d4/day4-input.txt', 'r') as file:
+with open('day4-input.txt', 'r') as file:
     for line in file:
         line = line.strip()
         elves = line.split(',')

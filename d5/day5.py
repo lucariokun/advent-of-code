@@ -2,7 +2,7 @@ import copy
 stack = list()
 duplicate_stack = list()
 
-with open('d5/day5-input.txt', 'r') as f:
+with open('day5-input.txt', 'r') as f:
     for line in f:
         if line.strip() and line.strip()[0] != '1' and line.strip()[0] != 'm':
             for i in range(int(len(line)/4)):
